@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+    100% {
+        background: linear-gradient(135deg, #764ba2, #667eea);
+    }
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out, pulse 3s infinite alternate;
+    transition: transform 0.3s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.02);
+    }
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+input {
+    width: 100%;
+    padding: 6px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+    transform: scale(1.05);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+p {
+    margin-top: 10px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    transform: scale(1.05);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+
+            <!-- Google reCAPTCHA (Replace YOUR_SITE_KEY) -->
+            <div class="g-recaptcha" data-sitekey="6LduDeoqAAAAAFuvWnub_EGjJ_qYJdm5ES8pR7Aa"></div>
+
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="FORM.html">Sign up here</a></p>
+        </form>
+    </div>
+
+    <!-- Google reCAPTCHA API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <!-- Your JavaScript File -->
+    <script src="script1.js"></script>
+</body>
+</html>
